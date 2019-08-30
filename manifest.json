@@ -1,0 +1,21 @@
+{
+  "name": "twitter noise remover",
+  "description": "remove retweet with flaming, trolling and so on",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://twitter.com/*", "https://twitter.com/*"
+  ],
+  "browser_action": {
+      "default_icon": "icon.png"
+  },
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+      "css": [],
+      "js": ["js.js"]
+    }
+  ]
+}
+
+
